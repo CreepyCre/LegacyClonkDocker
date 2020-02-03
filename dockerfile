@@ -62,7 +62,7 @@ WORKDIR /home/legacyclonk/data/
 
 #setup entrypoint
 COPY entrypoint.sh /home/legacyclonk/
-ENTRYPOINT /home/legacyclonk/entrypoint.sh $*
+ENTRYPOINT /home/legacyclonk/entrypoint.sh "$@"
 
 EXPOSE 11111/tcp
 EXPOSE 11112/tcp
